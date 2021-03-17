@@ -131,5 +131,5 @@ particlesJS('particles-js',
   typeSpeed: 100,
   backSpeed: 100,
   smartBackspace: true,
-  loop: true,
+  loop: false,
   });
