@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title><data:view.title.escaped/></title>
+<b:include data='blog' name='all-head-content'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css' rel='stylesheet'/>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js' type='text/javascript'/>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js' type='text/javascript'/>
+<b:skin><![CDATA[
+.bg-blue {background: #48b2c2;}body {background-color: #f8f8f8;}.uk-card-body {padding: 20px;}.snippet-thumbnail img {background: #f8f8f8;}.home-wrap{position:relative;width:100%;height:100vh;background-size:cover;background-attachment:fixed;z-index:0;}#particles-js{background: #594379;width:100%;height:100vh;position:absolute;z-index:1;}.aa_sec{position:absolute;top:35%;right:0;left:0;z-index:1;margin:0 auto;}.aa_txt{font-size:36px;font-weight:100;text-align:center;text-transform:uppercase;color:#594379;}.aa_title{background:#fff;padding:.5rem;}.aa_hh{color:#fff;background:#654791;padding:2rem;}.aa_desc{color:#fff;font-size:16px;text-transform:none;}.uk-card-body{padding: 20px;}.uk-modal-container .uk-modal-dialog {width: 750px;}.feed-links {display: none;}}]]></b:skin>
+<b:if cond='data:view.isSingleItem'>
+<style>
+h1.post-title.entry-title, .post-header {text-align: center;}
+h1.post-title.entry-title {margin-top: 20px!important;margin-bottom: 20px;}
+</style>
+</b:if>
+<b:if cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}'>   
+<style>
+h1.post-title.entry-title {display: inline; font-size: 1.5rem}
+h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comment-link.container a {color: #666;}
+div#blog-pager {margin-bottom: 20px!important;}
+</style>
+ </b:if>
+</head>
+<body>
+<b:if cond='data:blog.url == &quot;https://bot2136c.blogspot.com/p/about.html&quot;'>
+            <div class='home-wrap'>
+                <div class='uk-container uk-position-top uk-light' style='z-index: 2;'>
+                            <nav class='uk-navbar-container uk-navbar-transparent uk-navbar' uk-navbar=''>
+                                <div class='uk-navbar-left'>
+                                    <a class='uk-navbar-toggle uk-hidden@s' href='#offcanvas-slide' uk-navbar-toggle-icon='' uk-toggle=''/>
+              
+                                    <div id='offcanvas-slide' uk-offcanvas='overlay: true; flip: true; mode: push;'>
+                                        <div class='uk-offcanvas-bar'>
+                                              <button class='uk-offcanvas-close' type='button' uk-close=''/>
+                                            <ul class='uk-nav uk-nav-default'>
+                                                <li class='uk-active'><a href='#'>Active</a></li>
+                                                <li><a href='#'>Item</a></li>
+                                                <li class='uk-nav-header'>Header</li>
+                                                <li><a href='#'>Item</a></li>
+                                                <li><a href='#'>Item</a></li>
+                                                <li class='uk-nav-divider'/>
+                                                <li><a href='#'>Item</a></li>
+                                            </ul>
+                                    
+                                        </div>
+                                    </div>
+                                    <a class='uk-navbar-item uk-logo' href='https://bot2136c.blogspot.com'>Bot2136</a>
+
+                                    <ul class='uk-navbar-nav uk-visible@s'>
+                                        <li><a href='#'>Item</a></li>
+                                        <li>
+                                            <a href='#'>Parent</a>
+                                            <div class='uk-navbar-dropdown'>
+                                                <ul class='uk-nav uk-navbar-dropdown-nav'>
+                                                    <li class='uk-active'><a href='#'>Active</a></li>
+                                                    <li><a href='#'>Item</a></li>
+                                                    <li class='uk-nav-header'>Header</li>
+                                                    <li><a href='#'>Item</a></li>
+                                                    <li><a href='#'>Item</a></li>
+                                                    <li class='uk-nav-divider'/>
+                                                    <li><a href='#'>Item</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                              <a href='#'>Item</a>
+                                              <div class='uk-navbar-dropdown' uk-drop='boundary: !nav; boundary-align: true; pos: bottom-justify;'>
+                                                  <div class='uk-navbar-dropdown-grid uk-child-width-1-2 uk-grid' uk-grid=''>
+                                                      <div>
+                                                          <ul class='uk-nav uk-navbar-dropdown-nav'>
+                                                              <li class='uk-active'><a href='#'>Active</a></li>
+                                                              <li><a href='#'>Item</a></li>
+                                                              <li class='uk-nav-header'>Header</li>
+                                                              <li><a href='#'>Item</a></li>
+                                                              <li><a href='#'>Item</a></li>
+                                                              <li class='uk-nav-divider'/>
+                                                              <li><a href='#'>Item</a></li>
+                                                          </ul>
+                                                      </div>
+                                                      <div>
+                                                          <ul class='uk-nav uk-navbar-dropdown-nav'>
+                                                              <li class='uk-active'><a href='#'>Active</a></li>
+                                                              <li><a href='#'>Item</a></li>
+                                                              <li class='uk-nav-header'>Header</li>
+                                                              <li><a href='#'>Item</a></li>
+                                                              <li><a href='#'>Item</a></li>
+                                                              <li class='uk-nav-divider'/>
+                                                              <li><a href='#'>Item</a></li>
+                                                          </ul>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                                                    
+                                        <li>
+                                            <a href='#'>Parent</a>
+                                            <div class='uk-navbar-dropdown'>
+                                                <ul class='uk-nav uk-navbar-dropdown-nav'>
+                                                    <li class='uk-active'><a href='#'>Active</a></li>
+                                                    <li><a href='#'>Item</a></li>
+                                                    <li class='uk-nav-header'>Header</li>
+                                                    <li><a href='#'>Item</a></li>
+                                                    <li><a href='#'>Item</a></li>
+                                                    <li class='uk-nav-divider'/>
+                                                    <li><a href='#'>Item</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class='uk-active'><a href='#'>Active</a></li>                          
+                                    </ul>
+                                </div>
+                                <div class='uk-navbar-right'>
+              <a href='#'>Switch</a>               
+                                </div>
+                            </nav>
+                </div> 
+
+                <div id='particles-js'>               
+                </div>
+
+                <div class='aa_sec'>
+                        <div class='aa_txt'>            
+                            <span class='aa_title'>
+                              One Page</span><span class='aa_hh'>of</span><br/><span class='aa_title'>u2136n
+                            </span>
+                            <br/>
+                    <span class='aa_desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                        </div>                        
+                </div>
+            </div>
+      <div class='uk-section uk-section-secondary uk-section-large'>
+          <div class='uk-container'>
+<h3 class='uk-heading-medium uk-text-center'>Profil</h3>
+                <div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse' uk-grid=''>
+                        <div class='uk-flex-last@s uk-card-media-right uk-cover-container uk-width-2-5@s' uk-scrollspy='cls: uk-animation-slide-right; repeat:true'>
+                          <img alt='' src='https://1.bp.blogspot.com/-3AZhg-GOgWo/XS2JzJn3SfI/AAAAAAAAAEg/FbZ0_mgQ5yQItbf4zpgKhUdpuYbtfZcoQCEwYBhgL/s1600/__render__love_live___sonoda_umi_by_kaicchii_d94fjml.png' uk-cover=''/>
+                            <canvas height='480' width='800'/>
+                        </div>
+                        <div class='uk-card-body uk-width-3-5@s' uk-scrollspy='cls: uk-animation-slide-left; '>
+                                <p class='uk-text-large uk-text-center'>Hai, nama saya <mark>Orazio Zora</mark>, seorang no-life veteran, namun saya bangga dengan aktivitas untuk mengisi waktu luang saya. Terkadang juga bermain dengan font-end maupun back-end, ya walaupun masih awam</p>
+                                <div class='uk-flex uk-flex-center'>
+                                        <a class='uk-icon-button-default' uk-icon='icon: facebook; ratio: 2'/>
+                                        <a class='uk-icon-button-default uk-margin-left uk-margin-right' uk-icon='icon: github; ratio: 2'/>
+                                        <a class='uk-icon-button-default' uk-icon='icon: uikit; ratio: 2'/>
+                                </div>
+                        </div>
+                    </div>                             
+          </div>
+      </div>
+
+<div class='uk-section uk-section-primary uk-section-large'>
+<div class='uk-container'>
+<h3 class='uk-heading-medium uk-text-center'>Hobi</h3>
+                    <div class='uk-grid uk-grid-match uk-child-width-1-3@s uk-text-center' uk-grid='' uk-scrollspy='cls: uk-animation-fade; target: .uk-card; delay: 300;'>
+                            <div>
+                                <div class='uk-card uk-card-body'>
+                                        <a class='uk-icon' uk-icon='icon: star; ratio: 2'/>
+                                    <h3>Sepak Bola</h3><p>olahraga yang sangat membutuhkan energi ekstra</p>
+                                </div>
+                            </div>
+                            <div>
+                                    <div class='uk-card uk-card-body'>
+                                            <a class='uk-icon' uk-icon='icon: paint-bucket; ratio: 2'/>
+                                            <h3>Layangan</h3><p>sebenarnya saya lebih suka mengejar layangan putus</p>
+                                        </div>
+                                </div>
+                                <div>
+                                        <div class='uk-card uk-card-body'>
+                                                <a class='uk-icon' uk-icon='icon: bolt; ratio: 2'/>
+                                                <h3>Renang</h3><p>kecepatan bisa diadu</p>
+                                            </div>
+                                    </div> 
+                                    <div>
+                                            <div class='uk-card uk-card-body'>
+                                                    <a class='uk-icon' uk-icon='icon: code; ratio: 2'/>
+                                                    <h3>Coding</h3><p>masih newbie</p>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <div class='uk-card uk-card-body'>
+                                                        <a class='uk-icon' uk-icon='icon: heart; ratio: 2'/>
+                                                        <h3>Bermain Game</h3><p>suka ngomong sendiri dan toxic</p>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                    <div class='uk-card uk-card-body'>
+                                                        <a class='uk-icon' uk-icon='icon: happy; ratio: 2'/>
+                                                        <h3>Menonton Film</h3><p>hiburan yang kadang membuat betah dikamar seharian</p>
+                                                    </div>
+                                                </div>                                                        
+                        </div> 
+  </div>
+  </div>
+      <div class='uk-section' style='background-color:#f8f8f8'>
+          <div class='uk-container'>
+<h3 class='uk-heading-medium uk-text-center'>Latest Post</h3>                        
+          </div>
+      </div>
+
+</b:if>
+<b:if cond='data:blog.url != &quot;https://bot2136c.blogspot.com/p/about.html&quot;'>
+<div class='bg-blue uk-light'>
+<nav class='uk-navbar-container uk-navbar-transparent uk-container uk-margin' uk-navbar=''>
+                                <div class='uk-navbar-left'>
+                                    <a class='uk-navbar-toggle uk-hidden@s' href='#offcanvas-slide' uk-navbar-toggle-icon='' uk-toggle=''/>
+              
+                                    <div id='offcanvas-slide' uk-offcanvas='overlay: true; ; mode: push;'>
+                                        <div class='uk-offcanvas-bar'>
+                                              <button class='uk-offcanvas-close' type='button' uk-close=''/>
+                                            <ul class='uk-nav uk-nav-default'>                                               
+                                                <li class='uk-nav-header'>Blog</li>
+                                                    <li><a href='#'>Bot2136</a></li>
+                                                    <li class='uk-active'><a href='#'>Bot2136c</a></li>
+                                                    <li><a href='#'>Bot2136x</a></li>
+                                                    <li><a href='#'>Bot2136z</a></li> 
+                                                <li class='uk-nav-divider'/>
+                                                <li class='uk-nav-header'>Page</li>                                                
+                                                    <li><a href='#'>Posts</a></li>
+                                                    <li><a href='#'>Static</a></li>
+                                                    <li><a href='#'>Label</a></li>
+                                                    <li><a href='#'>Archive</a></li>
+                                                    <li><a href='#'>Search</a></li>                                                    
+                                                    <li><a href='#'>Error</a></li>                                                
+                                            </ul>
+                                    
+                                        </div>
+                                    </div>                  
+                                    <a class='uk-navbar-item uk-logo' href='https://bot2136c.blogspot.com'>Bot2136c</a>
+                                    <ul class='uk-navbar-nav uk-visible@s'>
+                                        <li><a href='#'>Home</a></li>
+                                        <li>
+                                            <a href='#'>Blog</a>
+                                            <div class='uk-navbar-dropdown'>
+                                                <ul class='uk-nav uk-navbar-dropdown-nav'>                                                  
+                                                    <li><a href='#'>Bot2136</a></li>
+                                                    <li class='uk-active'><a href='#'>Bot2136c</a></li>
+                                                    <li><a href='#'>Bot2136x</a></li>
+                                                    <li><a href='#'>Bot2136z</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                                                    
+                                        <li>
+                                            <a href='#'>Page</a>
+                                            <div class='uk-navbar-dropdown'>
+                                                <ul class='uk-nav uk-navbar-dropdown-nav'>
+                                                    <li><a href='#'>Posts</a></li>
+                                                    <li><a href='#'>Static</a></li>
+                                                    <li><a href='#'>Label</a></li>
+                                                    <li><a href='#'>Archive</a></li>
+                                                    <li><a href='#'>Search</a></li>                                                    
+                                                    <li><a href='#'>Error</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class='uk-active'><a href='#'>Kit</a></li>                          
+                                    </ul>
+
+                                </div>
+                                <div class='uk-navbar-right'>              
+               <a href='https://bot2136c.blogspot.com/p/about.html'>About</a>
+                                </div>
+                            </nav>
+</div>
+<b:section id='main'>
+  <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>false</b:widget-setting>
+      <b:widget-setting name='showLocation'>false</b:widget-setting>
+      <b:widget-setting name='postLabelsLabel'/>
+      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+      <b:widget-setting name='showReactions'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='this'>
+<b:if cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}'>
+<div class='uk-container'>
+<div class='blog-posts hfeed container uk-child-width-1-3@m  uk-child-width-1-2@s uk-grid' uk-grid='masonry: true'>
+    <b:loop index='i' values='data:posts' var='post'>
+      <b:include data='post' name='postCommentsAndAd'/>
+    </b:loop>
+  </div>
+  <b:include cond='data:view.isMultipleItems or data:view.isSingleItem' name='postPagination'/>
+  </div>
+      <b:else/>
+<div class='blog-posts hfeed container'>
+    <b:loop index='i' values='data:posts' var='post'>
+      <b:include data='post' name='postCommentsAndAd'/>
+    </b:loop>
+  <b:include cond='data:view.isMultipleItems or data:view.isSingleItem' name='postPagination'/>
+  </div>
+  </b:if>
+  <b:include name='feedLinks'/>
+</b:includable>
+    <b:includable id='aboutPostAuthor'>
+  <div class='author-name'>
+    <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+      <span>
+        <data:post.author.name/>
+      </span>
+    </a>
+  </div>
+  <div>
+    <span class='author-desc'>
+      <data:post.author.aboutMe/>
+    </span>
+  </div>
+</b:includable>
+    <b:includable id='addComments'>
+  <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:message name='messages.postAComment'/>
+  </a>
+</b:includable>
+    <b:includable id='commentAuthorAvatar'>
+  <div class='avatar-image-container'>
+    <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
+  </div>
+</b:includable>
+    <b:includable id='commentDeleteIcon' var='comment'>
+  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+    <b:if cond='data:showCmtPopup'>
+      <div class='goog-toggle-button'>
+        <div class='goog-inline-block comment-action-icon'/>
+      </div>
+    <b:else/>
+      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+    <b:includable id='commentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+    <b:includable id='commentFormIframeSrc' var='post'>
+  <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+</b:includable>
+    <b:includable id='commentItem' var='comment'>
+  <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
+    <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/>
+
+    <div class='comment-block'>
+      <div class='comment-author'>
+        <b:if cond='data:comment.authorUrl'>
+          <b:message name='messages.authorSaidWithLink'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+            <b:param expr:value='data:comment.authorUrl' name='authorUrl'/>
+          </b:message>
+        <b:else/>
+          <b:message name='messages.authorSaid'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+          </b:message>
+        </b:if>
+      </div>
+      <div expr:class='&quot;comment-body&quot; + (data:comment.isDeleted ? &quot; deleted&quot; : &quot;&quot;)'>
+        <data:comment.body/>
+      </div>
+      <div class='comment-footer'>
+        <span class='comment-timestamp'>
+          <a expr:href='data:comment.url' title='comment permalink'>
+            <data:comment.timestamp/>
+          </a>
+          <b:include data='comment' name='commentDeleteIcon'/>
+        </span>
+      </div>
+    </div>
+  </div>
+</b:includable>
+    <b:includable id='commentList' var='comments'>
+  <div id='comments-block'>
+    <b:loop values='data:comments' var='comment'>
+      <b:include data='comment' name='commentItem'/>
+    </b:loop>
+  </div>
+</b:includable>
+    <b:includable id='commentPicker' var='post'>
+  <b:if cond='data:post.commentSource == 1'>
+    <b:include data='post' name='iframeComments'/>
+  <b:elseif cond='data:post.showThreadedComments'/>
+    <b:include data='post' name='threadedComments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+    <b:includable id='comments' var='post'>
+<div class='uk-background-default uk-margin-top'>
+  <section expr:class='&quot;comments uk-container uk-width-2-3@m uk-padding&quot; + (data:post.embedCommentForm ? &quot; embed&quot; : &quot;&quot;)' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='data:post.allowComments'>
+
+      <b:include name='commentsTitle'/>
+
+      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+        <b:include cond='data:post.comments' data='post.comments' name='commentList'/>
+      </div>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <div class='paging-control-container'>
+          <b:if cond='data:post.hasOlderLinks'>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+              <data:messages.oldest/>
+            </a>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+              <data:messages.older/>
+            </a>
+          </b:if>
+
+          <span class='comment-range-text'>
+            <data:post.commentRangeText/>
+          </span>
+
+          <b:if cond='data:post.hasNewerLinks'>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+              <data:messages.newer/>
+            </a>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+              <data:messages.newest/>
+            </a>
+          </b:if>
+        </div>
+      </b:if>
+
+      <div class='footer'>
+        <b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'>
+            <b:include data='post' name='commentForm'/>
+          <b:else/>
+            <data:post.noNewCommentsText/>
+          </b:if>
+        <b:else/>
+          <b:if cond='data:post.allowComments'>
+            <b:include data='post' name='addComments'/>
+          </b:if>
+        </b:if>
+      </div>
+    </b:if>
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+      </div>
+</b:includable>
+    <b:includable id='commentsTitle'>
+  <h3 class='title'><data:messages.comments/></h3>
+</b:includable>
+    <b:includable id='feedLinks'>
+  <b:if cond='!data:view.isPost'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+  <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.allowComments and data:post.feedLinks'>
+          <b:include data='post.feedLinks' name='feedLinksBody'/>
+        </b:if>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+    <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:messages.subscribeTo/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+    <b:includable id='homePageLink'>
+  <li><a class='home-link' expr:href='data:blog.homepageUrl'>
+    <data:messages.home/>
+    </a></li>
+</b:includable>
+    <b:includable id='iframeComments' var='post'>
+  <b:if cond='data:post.allowIframeComments'>
+    <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
+    <div class='cmt_iframe_holder' expr:data-href='data:post.url.canonical' expr:data-viewtype='data:post.viewType'/>
+
+    <b:if cond='!data:post.embedCommentForm'>
+      <b:include data='post' name='commentsLink'/>
+    </b:if>
+  </b:if>
+</b:includable>
+    <b:includable id='inlineAd' var='post'>
+  <b:if cond='!data:view.isPreview'>
+    <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
+      <!-- Ad -->
+      <div class='inline-ad'>
+        <b:if cond='data:this.adCode != &quot;&quot;'>
+          <data:this.adCode/>
+        <b:else/>
+          <b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <div class='inline-ad'>
+      <div class='inline-ad-placeholder'>
+        <span><b:message name='messages.adsGoHere'/></span>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
+    <b:includable id='nextPageLink'>
+  <li class='uk-margin-auto-left'><a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:messages.olderPosts'>
+    <data:messages.olderPosts/>
+  </a></li>
+</b:includable>
+    <b:includable id='post' var='post'>
+    <b:if cond='data:view.isSingleItem'>
+    <div class='post uk-container uk-width-2-3@m'>
+<!-- breadcrumb for the post page -->
+<ul class='uk-breadcrumb uk-overflow-auto uk-flex uk-flex-center' id='breadcrumbs'>
+<li><a expr:href='data:blog.homepageUrl' rel='tag'>Home</a></li>
+<b:loop values='data:posts' var='post'>
+<b:if cond='data:post.labels'>
+<b:loop values='data:post.labels' var='label'>
+<li><a expr:href='data:label.url' rel='tag'><data:label.name/></a></li>
+</b:loop>
+<b:else/>
+</b:if><li><a class='uk-disabled'><data:post.title/></a></li>
+</b:loop>
+</ul>
+    <b:include data='post' name='postMeta'/>
+    <b:include data='post' name='postTitle'/>
+    <b:include name='headerByline'/>
+    <b:include data='post' name='postBody'/>
+  <b:include name='footerBylines'/>
+  </div>
+    <b:else/>
+<div class='post'>
+<b:include data='post' name='postMeta'/>
+<div class='uk-card uk-card-default uk-card-hover'>
+          <div class='uk-card-media-top snippet-thumbnail uk-transition-toggle uk-inline' tabindex='0'>
+            <b:with value='data:post.featuredImage                            ? resizeImage(data:post.featuredImageMaxResDefaultUrl, 610, &quot;610:343&quot;)                            : &quot;&quot;' var='highRes'>
+              <b:include data='{image: data:post.featuredImage, imageSizes: [610], imageRatio: &quot;610:343&quot;,            enhancedSourceset: data:highRes}' name='responsiveImage'/>
+            </b:with>
+<b:if cond='data:post.labels'>
+<span class='uk-card-badge'> 
+<b:loop values='data:post.labels' var='label'>
+<a class='uk-label bg-blue' expr:href='data:label.url + &quot;?&amp;amp;max-results=7&quot;' rel='tag' style='color:rgba(255,255,255,.7)'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'/>
+</b:loop>
+</span>
+</b:if>
+<div class='uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-dark uk-flex uk-flex-center uk-flex-middle' style='z-index: 2;'>
+<a class='uk-button uk-icon-link' expr:uk-toggle='&quot;#op-modal-&quot;+data:post.id' href='#' uk-icon='icon: plus; ratio: 1.5;'/>
+</div>
+          </div>
+<div class='uk-card-body'>
+    <b:include data='post' name='postTitle'/>
+    <b:include name='headerByline'/>  
+    <b:include data='post' name='postBody'/>
+</div>
+    </div>    
+  </div>
+</b:if>
+</b:includable>
+    <b:includable id='postBody' var='post'>
+  <!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. -->
+<b:if cond='data:blog.pageType == &quot;item&quot; or data:blog.pageType == &quot;static_page&quot;'>
+  <div class='post-body entry-content float-container uk-margin' expr:id='&quot;post-body-&quot; + data:post.id'>
+  <data:post.body/>
+  </div>
+</b:if>
+<b:if cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}'>
+<div class='uk-modal-container uk-flex-top' expr:id='&quot;op-modal-&quot;+data:post.id' uk-modal=''>
+<div class='uk-modal-dialog uk-margin-auto-vertical uk-overflow-auto'>
+  <div class='uk-modal-header uk-flex uk-flex-right bg-blue'>
+	<button class='uk-modal-close uk-light' uk-icon='icon: close;'/>
+  </div>
+  <div class='post-body entry-content float-container uk-modal-body' expr:id='&quot;post-body-&quot; + data:post.id'>
+    <data:post.body/>
+  </div>
+</div>
+</div>
+</b:if>
+</b:includable>
+    <b:includable id='postBodySnippet' var='post'>
+  <b:include data='post' name='postBody'/>
+</b:includable>
+    <b:includable id='postCommentsAndAd' var='post'>
+<div class='content'>
+  <article class='post-outer-container'>
+    <!-- Post title and body -->
+    <div class='post-outer'>
+      <b:include data='post' name='post'/>
+    </div>
+
+    <!-- Comments -->
+    <b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/>
+
+    <!-- Show ad inside post container, after comments, if single item. -->
+    <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
+  </article>
+    </div>
+  <!-- Show ad outside post container (between posts) for feed pages. -->
+  <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
+</b:includable>
+    <b:includable id='postCommentsLink'>
+  <b:if cond='data:view.isMultipleItems'>
+    <span class='byline post-comment-link container'>
+      <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
+      <b:include cond='data:post.commentSource == 1' name='commentsLinkIframe'/>
+    </span>
+  </b:if>
+</b:includable>
+    <b:includable id='postFooter' var='post'>
+  <div class='post-footer'>
+    <b:include name='footerBylines'/>
+    <b:include data='post' name='postFooterAuthorProfile'/>
+  </div>
+</b:includable>
+    <b:includable id='postFooterAuthorProfile' var='post'>
+  <b:if cond='data:post.author.aboutMe and data:view.isPost'>
+    <div class='author-profile'>
+      <b:if cond='data:post.author.authorPhoto.url'>
+        <img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/>
+        <div class='author-about'>
+          <b:include data='post' name='aboutPostAuthor'/>
+        </div>
+      <b:else/>
+        <b:include data='post' name='aboutPostAuthor'/>
+      </b:if>
+    </div>
+  </b:if>
+</b:includable>
+    <b:includable id='postHeader' var='post'>
+  <b:include name='headerByline'/>
+</b:includable>
+    <b:includable id='postMeta' var='post'>
+  <b:include data='post' name='postMetadataJSON'/>
+</b:includable>
+    <b:includable id='postPagination'>
+  <b:if cond='data:view.isSingleItem'>
+  <div class='blog-pager container bg-blue uk-light' id='blog-pager'>
+<div class='uk-container uk-width-2-3@m uk-padding'>
+<ul class='uk-pagination uk-flex' uk-margin=''>
+    <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+    <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+</ul>
+    </div>
+</div>
+  <b:else/>
+  <div class='blog-pager container uk-margin uk-background-default uk-card-body' id='blog-pager'>
+<ul class='uk-pagination uk-flex' uk-margin=''>
+    <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+    <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+</ul>
+  </div>  
+  </b:if>
+</b:includable>
+    <b:includable id='postTitle' var='post'>
+  <a expr:name='data:post.id'/>
+  <b:if cond='data:post.title != &quot;&quot;'>
+    <h1 class='post-title entry-title'>
+      <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
+        <a expr:href='data:post.link ?: data:post.url'><data:post.title/></a>
+      <b:else/>
+        <data:post.title/>
+      </b:if>
+    </h1>
+  </b:if>
+</b:includable>
+    <b:includable id='previousPageLink'>
+  <li><a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:messages.newerPosts'>
+    <data:messages.newerPosts/>
+  </a></li>
+</b:includable>
+    <b:includable id='threadedCommentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+    <b:includable id='threadedCommentJs' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+  <b:template-script inline='true' name='threaded_comments'/>
+  <script type='text/javascript'>
+    blogger.widgets.blog.initThreadedComments(
+        <data:post.commentJso/>,
+        <data:post.commentMsgs/>,
+        <data:post.commentConfig/>);
+  </script>
+</b:includable>
+    <b:includable id='threadedComments' var='post'>
+  <section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+
+    <b:include name='commentsTitle'/>
+
+    <div class='comments-content'>
+      <b:if cond='data:post.embedCommentForm'>
+        <b:include data='post' name='threadedCommentJs'/>
+      </b:if>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threadedCommentForm'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+  </b:widget>
+</b:section>
+
+</b:if>
+<div class='uk-background-default' id='rel-posts'>
+</div>
+<b:if cond='data:blog.url == &quot;https://bot2136c.blogspot.com/p/about.html&quot;'>
+<div class='uk-section-default'>
+    <div class='uk-section-xlarge uk-light uk-background-cover uk-background-fixed' style='background-image: url(https://1.bp.blogspot.com/-Bn9b4tI7Lns/XU6Hj_d5ueI/AAAAAAAAAKM/-TDrsTOLl90zp4kRz5jpm-JaqClF10UTgCEwYBhgL/s1920/1026620.jpg); background'>
+        <div class='uk-container'>
+<div class='uk-text-center'>
+            <h3 class='uk-heading-medium uk-text-center'><data:blog.title/></h3>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <div class='uk-flex uk-flex-center'>
+                                        <a class='uk-icon-button-default' uk-icon='icon: facebook; ratio: 2'/>
+                                        <a class='uk-icon-button-default uk-margin-left uk-margin-right' uk-icon='icon: twitter; ratio: 2'/>
+                                        <a class='uk-icon-button-default' uk-icon='icon: youtube; ratio: 2'/>
+                                </div>
+          </div>
+        </div>
+    </div>
+</div>
+</b:if>
+<footer class='uk-section-small uk-background-secondary uk-light'>
+<div class='uk-container uk-container-small'>
+<div class='uk-text-center'>
+<p>All Right Reserved</p>
+  <p><a expr:href='data:blog.homepageUrl' itemprop='name' itemscope='itemscope' itemtype='https://data-vocabulary.org/copyrightHolder'>Orazio Zora </a> &#169; 2019 Copyright</p>
+</div>
+</div>
+</footer>
+<b:if cond='data:view.isSingleItem'>
+<script type='text/javascript'>
+</script>
+<script type='text/javascript'>
+var disqus_shortname = &#39;bot2136&#39;;
+var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
+if (!disqus_blogger_current_url.length) {
+disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
+}
+var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
+var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
+</script>
+<script type='text/javascript'>
+(function() {
+    var bloggerjs = document.createElement(&#39;script&#39;);
+    bloggerjs.type = &#39;text/javascript&#39;;
+    bloggerjs.async = true;
+    bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_item.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+})();
+(function() {
+var bloggerjs = document.createElement(&#39;script&#39;);
+bloggerjs.type = &#39;text/javascript&#39;;
+bloggerjs.async = true;
+bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index.js&#39;;
+(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+})();
+</script>
+<b:else/>
+<script>//<![CDATA[//
+!function(t,e){t.InfiniteScroll=function(n){function r(t,n){return n=n||e,n.querySelectorAll(t)}function o(t){return void 0!==t}function a(t){return"function"==typeof t}function i(t,e){t=t||{};for(var n in e)t[n]="object"==typeof e[n]?i(t[n],e[n]):e[n];return t}function s(t,e,n){return o(t)?o(e)?void(o(n)?g[t][n]=e:g[t].push(e)):g[t]:g}function d(t,e){o(e)?delete g[t][e]:g[t]=[]}function l(t,e){if(o(g[t]))for(var n in g[t])g[t][n](e)}function c(){return L.innerHTML=p.text.loading,v=!0,M?(y.classList.add(p.state.loading),l("loading",[p]),void u(M,function(t,n){y.className=x+" "+p.state.load,h=e.createElement("div"),h.innerHTML=t;var o=r("title",h),a=r(p.target.post,h),i=r(p.target.anchors+" "+p.target.anchor,h),s=r(p.target.post,H);if(o=o&&o[0]?o[0].innerHTML:"",a.length&&s.length){var d=s[s.length-1];e.title=o,h=e.createElement("div");for(var c=0,u=a.length;u>c;++c)h.appendChild(a[c]);d.insertAdjacentHTML("afterend",h.innerHTML),f(),M=i.length?i[0].href:!1,v=!1,q++,l("load",[p,t,n])}},function(t,e){y.classList.add(p.state.error),v=!1,f(1),l("error",[p,t,e])})):(y.classList.add(p.state.loaded),L.innerHTML=p.text.loaded,l("loaded",[p]))}function f(t){if(L.innerHTML="",T){h.innerHTML=p.text[t?"error":"load"];var e=h.firstChild;e.onclick=function(){return 2===p.type&&(T=!1),c(),!1},L.appendChild(e)}}var u="infinite-scroll-state-",p={target:{posts:".posts",post:".post",anchors:".anchors",anchor:".anchor"},text:{load:"%s",loading:"%s",loaded:"%s",error:"%s"},state:{load:u+"load",loading:u+"loading",loaded:u+"loaded",error:u+"error"}},g={load:[],loading:[],loaded:[],error:[]};p=i(p,n||{}),p.on=s,p.off=d;var h=null,u=function(e,n,r){if(t.XMLHttpRequest){var o=new XMLHttpRequest;o.onreadystatechange=function(){if(4===o.readyState){if(200!==o.status)return void(r&&a(r)&&r(o.responseText,o));n&&a(n)&&n(o.responseText,o)}},o.open("GET",e),o.send()}},T=1!==p.type,v=!1,H=r(p.target.posts)[0],L=r(p.target.anchors)[0],M=r(p.target.anchor,L),m=e.body,y=e.documentElement,x=y.className||"",E=H.offsetTop+H.offsetHeight,j=t.innerHeight,A=0,b=null,q=1;if(M.length){M=M[0].href,h=e.createElement("div"),f();var w=function(){E=H.offsetTop+H.offsetHeight,j=t.innerHeight,A=m.scrollTop||y.scrollTop,v||E>A+j||c()};w(),0!==p.type&&t.addEventListener("scroll",function(){T||(b&&t.clearTimeout(b),b=t.setTimeout(w,200))},!1)}return p}}(window,document);var infinite_scroll = new InfiniteScroll({ type: 0,
+target: {
+posts: '.blog-posts',
+post: '.content',
+anchors: '.blog-pager',
+anchor: '.blog-pager-older-link'
+},
+text: {
+load: '<a class="js-load uk-flex uk-flex-center" href="javascript:;">Load More</a>',
+loading: '<a class="js-load uk-flex uk-flex-center" >Loading...</a><div class="load"></div>',
+loaded: '<a class="js-load uk-flex uk-flex-center" href="#" data-text="Loaded! Back To Top">Back To Top</a>',
+error: '<a class="js-load uk-flex uk-flex-center">Error!</a>'
+}
+});
+//]]>//</script>
+</b:if>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+
+</b:if>
+<b:if cond='data:blog.url == &quot;https://bot2136c.blogspot.com/p/about.html&quot;'>
+<script type='text/javascript'>
+//<![CDATA[
+function hexToRgb(e){var a=/^#?([a-f\d])([a-f\d])([a-f\d])$/i;e=e.replace(a,function(e,a,t,i){return a+a+t+t+i+i});var t=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);return t?{r:parseInt(t[1],16),g:parseInt(t[2],16),b:parseInt(t[3],16)}:null}function clamp(e,a,t){return Math.min(Math.max(e,a),t)}function isInArray(e,a){return a.indexOf(e)>-1}var pJS=function(e,a){var t=document.querySelector("#"+e+" > .particles-js-canvas-el");this.pJS={canvas:{el:t,w:t.offsetWidth,h:t.offsetHeight},particles:{number:{value:400,density:{enable:!0,value_area:800}},color:{value:"#fff"},shape:{type:"circle",stroke:{width:0,color:"#ff0000"},polygon:{nb_sides:5},image:{src:"",width:100,height:100}},opacity:{value:1,random:!1,anim:{enable:!1,speed:2,opacity_min:0,sync:!1}},size:{value:20,random:!1,anim:{enable:!1,speed:20,size_min:0,sync:!1}},line_linked:{enable:!0,distance:100,color:"#fff",opacity:1,width:1},move:{enable:!0,speed:2,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:3e3,rotateY:3e3}},array:[]},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"grab"},onclick:{enable:!0,mode:"push"},resize:!0},modes:{grab:{distance:100,line_linked:{opacity:1}},bubble:{distance:200,size:80,duration:.4},repulse:{distance:200,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}},mouse:{}},retina_detect:!1,fn:{interact:{},modes:{},vendors:{}},tmp:{}};var i=this.pJS;a&&Object.deepExtend(i,a),i.tmp.obj={size_value:i.particles.size.value,size_anim_speed:i.particles.size.anim.speed,move_speed:i.particles.move.speed,line_linked_distance:i.particles.line_linked.distance,line_linked_width:i.particles.line_linked.width,mode_grab_distance:i.interactivity.modes.grab.distance,mode_bubble_distance:i.interactivity.modes.bubble.distance,mode_bubble_size:i.interactivity.modes.bubble.size,mode_repulse_distance:i.interactivity.modes.repulse.distance},i.fn.retinaInit=function(){i.retina_detect&&window.devicePixelRatio>1?(i.canvas.pxratio=window.devicePixelRatio,i.tmp.retina=!0):(i.canvas.pxratio=1,i.tmp.retina=!1),i.canvas.w=i.canvas.el.offsetWidth*i.canvas.pxratio,i.canvas.h=i.canvas.el.offsetHeight*i.canvas.pxratio,i.particles.size.value=i.tmp.obj.size_value*i.canvas.pxratio,i.particles.size.anim.speed=i.tmp.obj.size_anim_speed*i.canvas.pxratio,i.particles.move.speed=i.tmp.obj.move_speed*i.canvas.pxratio,i.particles.line_linked.distance=i.tmp.obj.line_linked_distance*i.canvas.pxratio,i.interactivity.modes.grab.distance=i.tmp.obj.mode_grab_distance*i.canvas.pxratio,i.interactivity.modes.bubble.distance=i.tmp.obj.mode_bubble_distance*i.canvas.pxratio,i.particles.line_linked.width=i.tmp.obj.line_linked_width*i.canvas.pxratio,i.interactivity.modes.bubble.size=i.tmp.obj.mode_bubble_size*i.canvas.pxratio,i.interactivity.modes.repulse.distance=i.tmp.obj.mode_repulse_distance*i.canvas.pxratio},i.fn.canvasInit=function(){i.canvas.ctx=i.canvas.el.getContext("2d")},i.fn.canvasSize=function(){i.canvas.el.width=i.canvas.w,i.canvas.el.height=i.canvas.h,i&&i.interactivity.events.resize&&window.addEventListener("resize",function(){i.canvas.w=i.canvas.el.offsetWidth,i.canvas.h=i.canvas.el.offsetHeight,i.tmp.retina&&(i.canvas.w*=i.canvas.pxratio,i.canvas.h*=i.canvas.pxratio),i.canvas.el.width=i.canvas.w,i.canvas.el.height=i.canvas.h,i.particles.move.enable||(i.fn.particlesEmpty(),i.fn.particlesCreate(),i.fn.particlesDraw(),i.fn.vendors.densityAutoParticles()),i.fn.vendors.densityAutoParticles()})},i.fn.canvasPaint=function(){i.canvas.ctx.fillRect(0,0,i.canvas.w,i.canvas.h)},i.fn.canvasClear=function(){i.canvas.ctx.clearRect(0,0,i.canvas.w,i.canvas.h)},i.fn.particle=function(e,a,t){if(this.radius=(i.particles.size.random?Math.random():1)*i.particles.size.value,i.particles.size.anim.enable&&(this.size_status=!1,this.vs=i.particles.size.anim.speed/100,i.particles.size.anim.sync||(this.vs=this.vs*Math.random())),this.x=t?t.x:Math.random()*i.canvas.w,this.y=t?t.y:Math.random()*i.canvas.h,this.x>i.canvas.w-2*this.radius?this.x=this.x-this.radius:this.x<2*this.radius&&(this.x=this.x+this.radius),this.y>i.canvas.h-2*this.radius?this.y=this.y-this.radius:this.y<2*this.radius&&(this.y=this.y+this.radius),i.particles.move.bounce&&i.fn.vendors.checkOverlap(this,t),this.color={},"object"==typeof e.value)if(e.value instanceof Array){var s=e.value[Math.floor(Math.random()*i.particles.color.value.length)];this.color.rgb=hexToRgb(s)}else void 0!=e.value.r&&void 0!=e.value.g&&void 0!=e.value.b&&(this.color.rgb={r:e.value.r,g:e.value.g,b:e.value.b}),void 0!=e.value.h&&void 0!=e.value.s&&void 0!=e.value.l&&(this.color.hsl={h:e.value.h,s:e.value.s,l:e.value.l});else"random"==e.value?this.color.rgb={r:Math.floor(256*Math.random())+0,g:Math.floor(256*Math.random())+0,b:Math.floor(256*Math.random())+0}:"string"==typeof e.value&&(this.color=e,this.color.rgb=hexToRgb(this.color.value));this.opacity=(i.particles.opacity.random?Math.random():1)*i.particles.opacity.value,i.particles.opacity.anim.enable&&(this.opacity_status=!1,this.vo=i.particles.opacity.anim.speed/100,i.particles.opacity.anim.sync||(this.vo=this.vo*Math.random()));var n={};switch(i.particles.move.direction){case"top":n={x:0,y:-1};break;case"top-right":n={x:.5,y:-.5};break;case"right":n={x:1,y:-0};break;case"bottom-right":n={x:.5,y:.5};break;case"bottom":n={x:0,y:1};break;case"bottom-left":n={x:-.5,y:1};break;case"left":n={x:-1,y:0};break;case"top-left":n={x:-.5,y:-.5};break;default:n={x:0,y:0}}i.particles.move.straight?(this.vx=n.x,this.vy=n.y,i.particles.move.random&&(this.vx=this.vx*Math.random(),this.vy=this.vy*Math.random())):(this.vx=n.x+Math.random()-.5,this.vy=n.y+Math.random()-.5),this.vx_i=this.vx,this.vy_i=this.vy;var r=i.particles.shape.type;if("object"==typeof r){if(r instanceof Array){var c=r[Math.floor(Math.random()*r.length)];this.shape=c}}else this.shape=r;if("image"==this.shape){var o=i.particles.shape;this.img={src:o.image.src,ratio:o.image.width/o.image.height},this.img.ratio||(this.img.ratio=1),"svg"==i.tmp.img_type&&void 0!=i.tmp.source_svg&&(i.fn.vendors.createSvgImg(this),i.tmp.pushing&&(this.img.loaded=!1))}},i.fn.particle.prototype.draw=function(){function e(){i.canvas.ctx.drawImage(r,a.x-t,a.y-t,2*t,2*t/a.img.ratio)}var a=this;if(void 0!=a.radius_bubble)var t=a.radius_bubble;else var t=a.radius;if(void 0!=a.opacity_bubble)var s=a.opacity_bubble;else var s=a.opacity;if(a.color.rgb)var n="rgba("+a.color.rgb.r+","+a.color.rgb.g+","+a.color.rgb.b+","+s+")";else var n="hsla("+a.color.hsl.h+","+a.color.hsl.s+"%,"+a.color.hsl.l+"%,"+s+")";switch(i.canvas.ctx.fillStyle=n,i.canvas.ctx.beginPath(),a.shape){case"circle":i.canvas.ctx.arc(a.x,a.y,t,0,2*Math.PI,!1);break;case"edge":i.canvas.ctx.rect(a.x-t,a.y-t,2*t,2*t);break;case"triangle":i.fn.vendors.drawShape(i.canvas.ctx,a.x-t,a.y+t/1.66,2*t,3,2);break;case"polygon":i.fn.vendors.drawShape(i.canvas.ctx,a.x-t/(i.particles.shape.polygon.nb_sides/3.5),a.y-t/.76,2.66*t/(i.particles.shape.polygon.nb_sides/3),i.particles.shape.polygon.nb_sides,1);break;case"star":i.fn.vendors.drawShape(i.canvas.ctx,a.x-2*t/(i.particles.shape.polygon.nb_sides/4),a.y-t/1.52,2*t*2.66/(i.particles.shape.polygon.nb_sides/3),i.particles.shape.polygon.nb_sides,2);break;case"image":if("svg"==i.tmp.img_type)var r=a.img.obj;else var r=i.tmp.img_obj;r&&e()}i.canvas.ctx.closePath(),i.particles.shape.stroke.width>0&&(i.canvas.ctx.strokeStyle=i.particles.shape.stroke.color,i.canvas.ctx.lineWidth=i.particles.shape.stroke.width,i.canvas.ctx.stroke()),i.canvas.ctx.fill()},i.fn.particlesCreate=function(){for(var e=0;e<i.particles.number.value;e++)i.particles.array.push(new i.fn.particle(i.particles.color,i.particles.opacity.value))},i.fn.particlesUpdate=function(){for(var e=0;e<i.particles.array.length;e++){var a=i.particles.array[e];if(i.particles.move.enable){var t=i.particles.move.speed/2;a.x+=a.vx*t,a.y+=a.vy*t}if(i.particles.opacity.anim.enable&&(1==a.opacity_status?(a.opacity>=i.particles.opacity.value&&(a.opacity_status=!1),a.opacity+=a.vo):(a.opacity<=i.particles.opacity.anim.opacity_min&&(a.opacity_status=!0),a.opacity-=a.vo),a.opacity<0&&(a.opacity=0)),i.particles.size.anim.enable&&(1==a.size_status?(a.radius>=i.particles.size.value&&(a.size_status=!1),a.radius+=a.vs):(a.radius<=i.particles.size.anim.size_min&&(a.size_status=!0),a.radius-=a.vs),a.radius<0&&(a.radius=0)),"bounce"==i.particles.move.out_mode)var s={x_left:a.radius,x_right:i.canvas.w,y_top:a.radius,y_bottom:i.canvas.h};else var s={x_left:-a.radius,x_right:i.canvas.w+a.radius,y_top:-a.radius,y_bottom:i.canvas.h+a.radius};switch(a.x-a.radius>i.canvas.w?(a.x=s.x_left,a.y=Math.random()*i.canvas.h):a.x+a.radius<0&&(a.x=s.x_right,a.y=Math.random()*i.canvas.h),a.y-a.radius>i.canvas.h?(a.y=s.y_top,a.x=Math.random()*i.canvas.w):a.y+a.radius<0&&(a.y=s.y_bottom,a.x=Math.random()*i.canvas.w),i.particles.move.out_mode){case"bounce":a.x+a.radius>i.canvas.w?a.vx=-a.vx:a.x-a.radius<0&&(a.vx=-a.vx),a.y+a.radius>i.canvas.h?a.vy=-a.vy:a.y-a.radius<0&&(a.vy=-a.vy)}if(isInArray("grab",i.interactivity.events.onhover.mode)&&i.fn.modes.grabParticle(a),(isInArray("bubble",i.interactivity.events.onhover.mode)||isInArray("bubble",i.interactivity.events.onclick.mode))&&i.fn.modes.bubbleParticle(a),(isInArray("repulse",i.interactivity.events.onhover.mode)||isInArray("repulse",i.interactivity.events.onclick.mode))&&i.fn.modes.repulseParticle(a),i.particles.line_linked.enable||i.particles.move.attract.enable)for(var n=e+1;n<i.particles.array.length;n++){var r=i.particles.array[n];i.particles.line_linked.enable&&i.fn.interact.linkParticles(a,r),i.particles.move.attract.enable&&i.fn.interact.attractParticles(a,r),i.particles.move.bounce&&i.fn.interact.bounceParticles(a,r)}}},i.fn.particlesDraw=function(){i.canvas.ctx.clearRect(0,0,i.canvas.w,i.canvas.h),i.fn.particlesUpdate();for(var e=0;e<i.particles.array.length;e++){var a=i.particles.array[e];a.draw()}},i.fn.particlesEmpty=function(){i.particles.array=[]},i.fn.particlesRefresh=function(){cancelRequestAnimFrame(i.fn.checkAnimFrame),cancelRequestAnimFrame(i.fn.drawAnimFrame),i.tmp.source_svg=void 0,i.tmp.img_obj=void 0,i.tmp.count_svg=0,i.fn.particlesEmpty(),i.fn.canvasClear(),i.fn.vendors.start()},i.fn.interact.linkParticles=function(e,a){var t=e.x-a.x,s=e.y-a.y,n=Math.sqrt(t*t+s*s);if(n<=i.particles.line_linked.distance){var r=i.particles.line_linked.opacity-n/(1/i.particles.line_linked.opacity)/i.particles.line_linked.distance;if(r>0){var c=i.particles.line_linked.color_rgb_line;i.canvas.ctx.strokeStyle="rgba("+c.r+","+c.g+","+c.b+","+r+")",i.canvas.ctx.lineWidth=i.particles.line_linked.width,i.canvas.ctx.beginPath(),i.canvas.ctx.moveTo(e.x,e.y),i.canvas.ctx.lineTo(a.x,a.y),i.canvas.ctx.stroke(),i.canvas.ctx.closePath()}}},i.fn.interact.attractParticles=function(e,a){var t=e.x-a.x,s=e.y-a.y,n=Math.sqrt(t*t+s*s);if(n<=i.particles.line_linked.distance){var r=t/(1e3*i.particles.move.attract.rotateX),c=s/(1e3*i.particles.move.attract.rotateY);e.vx-=r,e.vy-=c,a.vx+=r,a.vy+=c}},i.fn.interact.bounceParticles=function(e,a){var t=e.x-a.x,i=e.y-a.y,s=Math.sqrt(t*t+i*i),n=e.radius+a.radius;n>=s&&(e.vx=-e.vx,e.vy=-e.vy,a.vx=-a.vx,a.vy=-a.vy)},i.fn.modes.pushParticles=function(e,a){i.tmp.pushing=!0;for(var t=0;e>t;t++)i.particles.array.push(new i.fn.particle(i.particles.color,i.particles.opacity.value,{x:a?a.pos_x:Math.random()*i.canvas.w,y:a?a.pos_y:Math.random()*i.canvas.h})),t==e-1&&(i.particles.move.enable||i.fn.particlesDraw(),i.tmp.pushing=!1)},i.fn.modes.removeParticles=function(e){i.particles.array.splice(0,e),i.particles.move.enable||i.fn.particlesDraw()},i.fn.modes.bubbleParticle=function(e){function a(){e.opacity_bubble=e.opacity,e.radius_bubble=e.radius}function t(a,t,s,n,c){if(a!=t)if(i.tmp.bubble_duration_end){if(void 0!=s){var o=n-p*(n-a)/i.interactivity.modes.bubble.duration,l=a-o;d=a+l,"size"==c&&(e.radius_bubble=d),"opacity"==c&&(e.opacity_bubble=d)}}else if(r<=i.interactivity.modes.bubble.distance){if(void 0!=s)var v=s;else var v=n;if(v!=a){var d=n-p*(n-a)/i.interactivity.modes.bubble.duration;"size"==c&&(e.radius_bubble=d),"opacity"==c&&(e.opacity_bubble=d)}}else"size"==c&&(e.radius_bubble=void 0),"opacity"==c&&(e.opacity_bubble=void 0)}if(i.interactivity.events.onhover.enable&&isInArray("bubble",i.interactivity.events.onhover.mode)){var s=e.x-i.interactivity.mouse.pos_x,n=e.y-i.interactivity.mouse.pos_y,r=Math.sqrt(s*s+n*n),c=1-r/i.interactivity.modes.bubble.distance;if(r<=i.interactivity.modes.bubble.distance){if(c>=0&&"mousemove"==i.interactivity.status){if(i.interactivity.modes.bubble.size!=i.particles.size.value)if(i.interactivity.modes.bubble.size>i.particles.size.value){var o=e.radius+i.interactivity.modes.bubble.size*c;o>=0&&(e.radius_bubble=o)}else{var l=e.radius-i.interactivity.modes.bubble.size,o=e.radius-l*c;o>0?e.radius_bubble=o:e.radius_bubble=0}if(i.interactivity.modes.bubble.opacity!=i.particles.opacity.value)if(i.interactivity.modes.bubble.opacity>i.particles.opacity.value){var v=i.interactivity.modes.bubble.opacity*c;v>e.opacity&&v<=i.interactivity.modes.bubble.opacity&&(e.opacity_bubble=v)}else{var v=e.opacity-(i.particles.opacity.value-i.interactivity.modes.bubble.opacity)*c;v<e.opacity&&v>=i.interactivity.modes.bubble.opacity&&(e.opacity_bubble=v)}}}else a();"mouseleave"==i.interactivity.status&&a()}else if(i.interactivity.events.onclick.enable&&isInArray("bubble",i.interactivity.events.onclick.mode)){if(i.tmp.bubble_clicking){var s=e.x-i.interactivity.mouse.click_pos_x,n=e.y-i.interactivity.mouse.click_pos_y,r=Math.sqrt(s*s+n*n),p=((new Date).getTime()-i.interactivity.mouse.click_time)/1e3;p>i.interactivity.modes.bubble.duration&&(i.tmp.bubble_duration_end=!0),p>2*i.interactivity.modes.bubble.duration&&(i.tmp.bubble_clicking=!1,i.tmp.bubble_duration_end=!1)}i.tmp.bubble_clicking&&(t(i.interactivity.modes.bubble.size,i.particles.size.value,e.radius_bubble,e.radius,"size"),t(i.interactivity.modes.bubble.opacity,i.particles.opacity.value,e.opacity_bubble,e.opacity,"opacity"))}},i.fn.modes.repulseParticle=function(e){function a(){var a=Math.atan2(d,p);if(e.vx=u*Math.cos(a),e.vy=u*Math.sin(a),"bounce"==i.particles.move.out_mode){var t={x:e.x+e.vx,y:e.y+e.vy};t.x+e.radius>i.canvas.w?e.vx=-e.vx:t.x-e.radius<0&&(e.vx=-e.vx),t.y+e.radius>i.canvas.h?e.vy=-e.vy:t.y-e.radius<0&&(e.vy=-e.vy)}}if(i.interactivity.events.onhover.enable&&isInArray("repulse",i.interactivity.events.onhover.mode)&&"mousemove"==i.interactivity.status){var t=e.x-i.interactivity.mouse.pos_x,s=e.y-i.interactivity.mouse.pos_y,n=Math.sqrt(t*t+s*s),r={x:t/n,y:s/n},c=i.interactivity.modes.repulse.distance,o=100,l=clamp(1/c*(-1*Math.pow(n/c,2)+1)*c*o,0,50),v={x:e.x+r.x*l,y:e.y+r.y*l};"bounce"==i.particles.move.out_mode?(v.x-e.radius>0&&v.x+e.radius<i.canvas.w&&(e.x=v.x),v.y-e.radius>0&&v.y+e.radius<i.canvas.h&&(e.y=v.y)):(e.x=v.x,e.y=v.y)}else if(i.interactivity.events.onclick.enable&&isInArray("repulse",i.interactivity.events.onclick.mode))if(i.tmp.repulse_finish||(i.tmp.repulse_count++,i.tmp.repulse_count==i.particles.array.length&&(i.tmp.repulse_finish=!0)),i.tmp.repulse_clicking){var c=Math.pow(i.interactivity.modes.repulse.distance/6,3),p=i.interactivity.mouse.click_pos_x-e.x,d=i.interactivity.mouse.click_pos_y-e.y,m=p*p+d*d,u=-c/m*1;c>=m&&a()}else 0==i.tmp.repulse_clicking&&(e.vx=e.vx_i,e.vy=e.vy_i)},i.fn.modes.grabParticle=function(e){if(i.interactivity.events.onhover.enable&&"mousemove"==i.interactivity.status){var a=e.x-i.interactivity.mouse.pos_x,t=e.y-i.interactivity.mouse.pos_y,s=Math.sqrt(a*a+t*t);if(s<=i.interactivity.modes.grab.distance){var n=i.interactivity.modes.grab.line_linked.opacity-s/(1/i.interactivity.modes.grab.line_linked.opacity)/i.interactivity.modes.grab.distance;if(n>0){var r=i.particles.line_linked.color_rgb_line;i.canvas.ctx.strokeStyle="rgba("+r.r+","+r.g+","+r.b+","+n+")",i.canvas.ctx.lineWidth=i.particles.line_linked.width,i.canvas.ctx.beginPath(),i.canvas.ctx.moveTo(e.x,e.y),i.canvas.ctx.lineTo(i.interactivity.mouse.pos_x,i.interactivity.mouse.pos_y),i.canvas.ctx.stroke(),i.canvas.ctx.closePath()}}}},i.fn.vendors.eventsListeners=function(){"window"==i.interactivity.detect_on?i.interactivity.el=window:i.interactivity.el=i.canvas.el,(i.interactivity.events.onhover.enable||i.interactivity.events.onclick.enable)&&(i.interactivity.el.addEventListener("mousemove",function(e){if(i.interactivity.el==window)var a=e.clientX,t=e.clientY;else var a=e.offsetX||e.clientX,t=e.offsetY||e.clientY;i.interactivity.mouse.pos_x=a,i.interactivity.mouse.pos_y=t,i.tmp.retina&&(i.interactivity.mouse.pos_x*=i.canvas.pxratio,i.interactivity.mouse.pos_y*=i.canvas.pxratio),i.interactivity.status="mousemove"}),i.interactivity.el.addEventListener("mouseleave",function(e){i.interactivity.mouse.pos_x=null,i.interactivity.mouse.pos_y=null,i.interactivity.status="mouseleave"})),i.interactivity.events.onclick.enable&&i.interactivity.el.addEventListener("click",function(){if(i.interactivity.mouse.click_pos_x=i.interactivity.mouse.pos_x,i.interactivity.mouse.click_pos_y=i.interactivity.mouse.pos_y,i.interactivity.mouse.click_time=(new Date).getTime(),i.interactivity.events.onclick.enable)switch(i.interactivity.events.onclick.mode){case"push":i.particles.move.enable?i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb,i.interactivity.mouse):1==i.interactivity.modes.push.particles_nb?i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb,i.interactivity.mouse):i.interactivity.modes.push.particles_nb>1&&i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb);break;case"remove":i.fn.modes.removeParticles(i.interactivity.modes.remove.particles_nb);break;case"bubble":i.tmp.bubble_clicking=!0;break;case"repulse":i.tmp.repulse_clicking=!0,i.tmp.repulse_count=0,i.tmp.repulse_finish=!1,setTimeout(function(){i.tmp.repulse_clicking=!1},1e3*i.interactivity.modes.repulse.duration)}})},i.fn.vendors.densityAutoParticles=function(){if(i.particles.number.density.enable){var e=i.canvas.el.width*i.canvas.el.height/1e3;i.tmp.retina&&(e/=2*i.canvas.pxratio);var a=e*i.particles.number.value/i.particles.number.density.value_area,t=i.particles.array.length-a;0>t?i.fn.modes.pushParticles(Math.abs(t)):i.fn.modes.removeParticles(t)}},i.fn.vendors.checkOverlap=function(e,a){for(var t=0;t<i.particles.array.length;t++){var s=i.particles.array[t],n=e.x-s.x,r=e.y-s.y,c=Math.sqrt(n*n+r*r);c<=e.radius+s.radius&&(e.x=a?a.x:Math.random()*i.canvas.w,e.y=a?a.y:Math.random()*i.canvas.h,i.fn.vendors.checkOverlap(e))}},i.fn.vendors.createSvgImg=function(e){var a=i.tmp.source_svg,t=/#([0-9A-F]{3,6})/gi,s=a.replace(t,function(a,t,i,s){if(e.color.rgb)var n="rgba("+e.color.rgb.r+","+e.color.rgb.g+","+e.color.rgb.b+","+e.opacity+")";else var n="hsla("+e.color.hsl.h+","+e.color.hsl.s+"%,"+e.color.hsl.l+"%,"+e.opacity+")";return n}),n=new Blob([s],{type:"image/svg+xml;charset=utf-8"}),r=window.URL||window.webkitURL||window,c=r.createObjectURL(n),o=new Image;o.addEventListener("load",function(){e.img.obj=o,e.img.loaded=!0,r.revokeObjectURL(c),i.tmp.count_svg++}),o.src=c},i.fn.vendors.destroypJS=function(){cancelAnimationFrame(i.fn.drawAnimFrame),t.remove(),pJSDom=null},i.fn.vendors.drawShape=function(e,a,t,i,s,n){var r=s*n,c=s/n,o=180*(c-2)/c,l=Math.PI-Math.PI*o/180;e.save(),e.beginPath(),e.translate(a,t),e.moveTo(0,0);for(var v=0;r>v;v++)e.lineTo(i,0),e.translate(i,0),e.rotate(l);e.fill(),e.restore()},i.fn.vendors.exportImg=function(){window.open(i.canvas.el.toDataURL("image/png"),"_blank")},i.fn.vendors.loadImg=function(e){if(i.tmp.img_error=void 0,""!=i.particles.shape.image.src)if("svg"==e){var a=new XMLHttpRequest;a.open("GET",i.particles.shape.image.src),a.onreadystatechange=function(e){4==a.readyState&&(200==a.status?(i.tmp.source_svg=e.currentTarget.response,i.fn.vendors.checkBeforeDraw()):(console.log("Error pJS - Image not found"),i.tmp.img_error=!0))},a.send()}else{var t=new Image;t.addEventListener("load",function(){i.tmp.img_obj=t,i.fn.vendors.checkBeforeDraw()}),t.src=i.particles.shape.image.src}else console.log("Error pJS - No image.src"),i.tmp.img_error=!0},i.fn.vendors.draw=function(){"image"==i.particles.shape.type?"svg"==i.tmp.img_type?i.tmp.count_svg>=i.particles.number.value?(i.fn.particlesDraw(),i.particles.move.enable?i.fn.drawAnimFrame=requestAnimFrame(i.fn.vendors.draw):cancelRequestAnimFrame(i.fn.drawAnimFrame)):i.tmp.img_error||(i.fn.drawAnimFrame=requestAnimFrame(i.fn.vendors.draw)):void 0!=i.tmp.img_obj?(i.fn.particlesDraw(),i.particles.move.enable?i.fn.drawAnimFrame=requestAnimFrame(i.fn.vendors.draw):cancelRequestAnimFrame(i.fn.drawAnimFrame)):i.tmp.img_error||(i.fn.drawAnimFrame=requestAnimFrame(i.fn.vendors.draw)):(i.fn.particlesDraw(),i.particles.move.enable?i.fn.drawAnimFrame=requestAnimFrame(i.fn.vendors.draw):cancelRequestAnimFrame(i.fn.drawAnimFrame))},i.fn.vendors.checkBeforeDraw=function(){"image"==i.particles.shape.type?"svg"==i.tmp.img_type&&void 0==i.tmp.source_svg?i.tmp.checkAnimFrame=requestAnimFrame(check):(cancelRequestAnimFrame(i.tmp.checkAnimFrame),i.tmp.img_error||(i.fn.vendors.init(),i.fn.vendors.draw())):(i.fn.vendors.init(),i.fn.vendors.draw())},i.fn.vendors.init=function(){i.fn.retinaInit(),i.fn.canvasInit(),i.fn.canvasSize(),i.fn.canvasPaint(),i.fn.particlesCreate(),i.fn.vendors.densityAutoParticles(),i.particles.line_linked.color_rgb_line=hexToRgb(i.particles.line_linked.color)},i.fn.vendors.start=function(){isInArray("image",i.particles.shape.type)?(i.tmp.img_type=i.particles.shape.image.src.substr(i.particles.shape.image.src.length-3),i.fn.vendors.loadImg(i.tmp.img_type)):i.fn.vendors.checkBeforeDraw()},i.fn.vendors.eventsListeners(),i.fn.vendors.start()};Object.deepExtend=function(e,a){for(var t in a)a[t]&&a[t].constructor&&a[t].constructor===Object?(e[t]=e[t]||{},arguments.callee(e[t],a[t])):e[t]=a[t];return e},window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(e){window.setTimeout(e,1e3/60)}}(),window.cancelRequestAnimFrame=function(){return window.cancelAnimationFrame||window.webkitCancelRequestAnimationFrame||window.mozCancelRequestAnimationFrame||window.oCancelRequestAnimationFrame||window.msCancelRequestAnimationFrame||clearTimeout}(),window.pJSDom=[],window.particlesJS=function(e,a){"string"!=typeof e&&(a=e,e="particles-js"),e||(e="particles-js");var t=document.getElementById(e),i="particles-js-canvas-el",s=t.getElementsByClassName(i);if(s.length)for(;s.length>0;)t.removeChild(s[0]);var n=document.createElement("canvas");n.className=i,n.style.width="100%",n.style.height="100%";var r=document.getElementById(e).appendChild(n);null!=r&&pJSDom.push(new pJS(e,a))},window.particlesJS.load=function(e,a,t){var i=new XMLHttpRequest;i.open("GET",a),i.onreadystatechange=function(a){if(4==i.readyState)if(200==i.status){var s=JSON.parse(a.currentTarget.response);window.particlesJS(e,s),t&&t()}else console.log("Error pJS - XMLHttpRequest status: "+i.status),console.log("Error pJS - File config not found")},i.send()};
+//]]>
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+particlesJS('particles-js',
+  
+{
+  "particles": {
+    "number": {
+      "value": 30,
+      "density": {
+        "enable": true,
+        "value_area": 500
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 4
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 3,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": false,
+      "attract": {
+        "enable": true,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+
+);
+//]]>
+</script>
+</b:if>
+</body>
+</html>
