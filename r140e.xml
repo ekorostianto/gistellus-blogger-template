@@ -665,7 +665,7 @@ error: '<a class="js-load uk-flex uk-flex-center">Error!</a>'
 //]]>//</script>
 </b:if>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<script src="https://rawcdn.githack.com/r140e/r140e-blogger/4940c925ea884c5b46a0cf633662effa6fa37e08/custom-javascript.js"></script>
+<script src="https://rawcdn.githack.com/r140e/r140e-dummy/f14dc0e571b44c6151b5392156b1b82d69327496/r140e_homePage.js"></script>
 </b:if>
 <div id='offcanvas-slide' uk-offcanvas='mode: slide; overlay: true'>
   <div class='uk-offcanvas-bar'>

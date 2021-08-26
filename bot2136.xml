@@ -215,7 +215,7 @@ body{background-color:#f8f8f8;}
 <h3 class='uk-heading-medium uk-text-center'>Profil</h3>
                 <div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse' uk-grid=''>
                         <div class='uk-flex-last@s uk-card-media-right uk-cover-container uk-width-2-5@s'>
-                          <img alt='' src='https://1.bp.blogspot.com/-3AZhg-GOgWo/XS2JzJn3SfI/AAAAAAAAAEg/FbZ0_mgQ5yQItbf4zpgKhUdpuYbtfZcoQCEwYBhgL/s1600/__render__love_live___sonoda_umi_by_kaicchii_d94fjml.png' uk-cover=''/>
+                          <img alt='' src='https://i.idol.st/u/idol/97Tennoji-Rina-YB8JUo.png' uk-cover=''/>
                             <canvas height='480' width='800'/>
                         </div>
                         <div class='uk-card-body uk-width-3-5@s'>
@@ -271,7 +271,7 @@ body{background-color:#f8f8f8;}
                         </div> 
   </div>
 <div class='uk-section-default'>
-    <div class='uk-section-xlarge uk-light uk-background-cover' style='background-image: url(https://1.bp.blogspot.com/-Bn9b4tI7Lns/XU6Hj_d5ueI/AAAAAAAAAKM/-TDrsTOLl90zp4kRz5jpm-JaqClF10UTgCEwYBhgL/s1920/1026620.jpg); background' uk-parallax='bgy: -200'>
+    <div class='uk-section-xlarge uk-background-cover uk-background-blend-overlay uk-background-secondary uk-light' style='background-image: url(https://i.idol.st/u/card/art/2x/397SR-Tennoji-Rina-I-called-for-a-teacher-Nijiiro-Passions-15DVzF.png); background' uk-parallax='bgy: -50'>
         <div class='uk-container'>
 
             <h3 class='uk-heading-medium uk-text-center' uk-parallax='y: 50,0'>Latest Post</h3>
@@ -284,7 +284,7 @@ body{background-color:#f8f8f8;}
 <div class='uk-child-width-auto uk-grid' id='main-wrapper' uk-grid=''>
 <main class='uk-width-expand@m'>
 <b:section id='main'>
-  <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
+  <b:widget id='Blog1' locked='false' title='Postingan Blog' type='Blog' version='1'>
     <b:widget-settings>
       <b:widget-setting name='showDateHeader'>false</b:widget-setting>
       <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
@@ -297,6 +297,7 @@ body{background-color:#f8f8f8;}
       <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='reactionsLabel'/>
       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
       <b:widget-setting name='showLabels'>true</b:widget-setting>
