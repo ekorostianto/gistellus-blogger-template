@@ -2,9 +2,9 @@
 This project aims to learn frontend and apply it to the blogspot platform
 
 Custom UIkit Templates:
-- [r140e]
 - [Bot2136]
 - [Bot2136 - Basic]
+- [r140e]
 
 Redesign Template:
 - [Dinebula]
