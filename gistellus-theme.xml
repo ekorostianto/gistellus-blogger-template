@@ -11,13 +11,13 @@
 h3.post-title.uk-card-title {
     font-size: 18px;
 }
-.uk-offcanvas-bar .uk-label {background-color: #A3DA8D; color: #fff}
-a {color: #A3DA8D;}
+.uk-offcanvas-bar .uk-label {background-color: #594379; color: #fff}
+a {color: #594379;}
 .uk-light .uk-navbar-nav > li > a {color: #fff}
 .uk-modal-title {font-size: 24px;text-align: center;}
 .uk-modal-dialog {width: 720px;}
 html {font-size: 18px; font-weight: 500;}
-.bg-blue, .uk-card-badge, .uk-label {background: #A3DA8D;}
+.bg-primary, .uk-card-badge, .uk-label {background: #594379;}
 body {background-color: #f8f8f8;}
 .uk-card-badge {
     padding: 0;
@@ -31,12 +31,20 @@ body {background-color: #f8f8f8;}
 .uk-card-body{padding: 20px;}
 .feed-links {display: none;}
 
+.bg-header {background: linear-gradient(135deg, rgba(80,177,236,1) 0%, rgba(18,56,127,1) 35%, rgba(94,47,119,1) 70%, rgba(99,21,71,1) 100%);}
+
+.aa_txt{font-size:36px;font-weight:100;text-align:center;text-transform:uppercase;color:#594379;}
+.aa_title{background:#fff;padding:.5rem;}
+.aa_hh{color:#fff;background:#654791;padding:2rem;}
+.aa_desc{color:#fff;font-size:16px;text-transform:none;}
+
 .light {display:none}
 .dark-mode .dark {display:none}
 .dark-mode .light {display:block}
+
 /* Layout Blog Mode Dark */
 body.dark-mode {background:#111}
-.dark-mode footer a{color:#A3DA8D}
+.dark-mode footer a{color:#594379}
 
 .dark-mode .hero{background:#191919;color:#fff}
 .dark-mode .menu{background:#646464;color:#fff}
@@ -85,7 +93,7 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
 .byline.post-timestamp {margin-left: auto !important;}
 .dark-mode .uk-modal-title {color:#fff}
 .dark-mode .blog-pager {background: #191919}
-.dark-mode #blog-pager a {color: #A3DA8D;}
+.dark-mode #blog-pager a {color: #594379;}
 .dark-mode footer{background:#111}
 </style>
  </b:if>
@@ -102,7 +110,7 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
           <li><a href='/search/label/GIS'>GIS</a></li>
           <li><a href='/search/label/Remote Sensing'>RS</a></li>
           <li><a href='/search/label/Surveying'>Surveying</a></li>
-          <li><a href='/search/label/Data%20Science'>Data Science</a></li>
+          <li><a href='https://www.gistellus.com/p/eko-rostianto.html'>Author</a></li>
           <li><a href='/404'>404</a></li>
         </ul>
 
@@ -132,19 +140,23 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
       </div>
     </div>
 </nav>
-<div class='hero bg-blue uk-light uk-position-relative'>
+<div class='hero bg-primary bg-header uk-light uk-position-relative'>
   <div id='particles-js'/>
 <div class='uk-section-xlarge uk-container uk-position-z-index uk-width-1-2@s uk-text-center'>
-<div id='typed-strings'>
-    <p><b><data:blog.title/></b></p>
-</div>
-  <span class='uk-h2 uk-heading-bullet' id='typed'/>
+  <div class='uk-margin'>
+    <div class='aa_txt'>            
+      <span class='aa_title'>Site</span><span class='aa_hh'>of</span><br/><span class='aa_title'><data:blog.title/></span>
+    </div>                        
+  </div>  
+  <div id='typed-strings'>
   <p><data:blog.metaDescription/></p>
+  </div>
+  <span id='typed'/>
   </div>
 </div>
   </header>
   <b:else/>
-<div class='bg-blue uk-light'>
+<div class='bg-primary uk-light' id='hero'>
 <nav class='uk-navbar-container uk-navbar-transparent uk-container uk-margin' uk-navbar=''>
     <div class='uk-navbar-left'>
         <a class='uk-navbar-toggle uk-hidden@s' href='#offcanvas-slide' uk-navbar-toggle-icon='' uk-toggle=''/>
@@ -153,7 +165,7 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
           <li><a href='/search/label/GIS'>GIS</a></li>
           <li><a href='/search/label/Remote Sensing'>RS</a></li>
           <li><a href='/search/label/Surveying'>Surveying</a></li>
-          <li><a href='/search/label/Data%20Science'>Data Science</a></li>
+          <li><a href='https://www.gistellus.com/p/eko-rostianto.html'>Author</a></li>
           <li><a href='/404'>404</a></li>
         </ul>
 
@@ -185,7 +197,80 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
 </nav>
 </div>
 </b:if>
+<b:if cond='data:blog.url == &quot;https://www.gistellus.com/p/eko-rostianto.html&quot;'>
+<style>main, #hero, footer {
+    display: none;
+}</style>
+      <div class='uk-section uk-section-secondary uk-section-large'>
+          <div class='uk-container'>
+<h3 class='uk-heading-medium uk-text-center'>Profil</h3>
+                <div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse' uk-grid=''>
+                        <div class='uk-flex-last@s uk-card-media-right uk-cover-container uk-width-2-5@s'>
+                          <img alt='' src='https://i.idol.st/u/idol/97Tennoji-Rina-YB8JUo.png' uk-cover=''/>
+                            <canvas height='480' width='800'/>
+                        </div>
+                        <div class='uk-card-body uk-width-3-5@s'>
+                                <p class='uk-text-large uk-text-center'>Hai, nama saya <mark>Eko Rostianto</mark>, seorang no-life veteran, namun saya bangga dengan aktivitas untuk mengisi waktu luang saya. Terkadang juga bermain dengan font-end maupun back-end, ya walaupun masih awam</p>
+                                <div class='uk-flex uk-flex-center'>
+                                        <a class='uk-icon-button-default' href='https://www.instagram.com/r140e' uk-icon='icon: instagram; ratio: 2'/>
+                                        <a class='uk-icon-button-default uk-margin-left uk-margin-right' href='https://www.linkedin.com/in/ekorostianto' uk-icon='icon: linkedin; ratio: 2'/>
+                                        <a class='uk-icon-button-default' href='https://www.github.com/ekorostianto' uk-icon='icon: github; ratio: 2'/>
+                                </div>
+                        </div>
+                    </div>                             
+          </div>
+      </div>
+<div class='uk-section uk-section-primary uk-section-large'>
+<h3 class='uk-heading-medium uk-text-center'>Hobi</h3>
+                    <div class='uk-grid uk-grid-match uk-child-width-1-3@s uk-text-center' uk-grid=''>
+                            <div>
+                                <div class='uk-card uk-card-body'>
+                                        <a class='uk-icon' uk-icon='icon: star; ratio: 2'/>
+                                    <h3>Sepak Bola</h3><p>olahraga yang sangat membutuhkan energi ekstra</p>
+                                </div>
+                            </div>
+                            <div>
+                                    <div class='uk-card uk-card-body'>
+                                            <a class='uk-icon' uk-icon='icon: paint-bucket; ratio: 2'/>
+                                            <h3>Layangan</h3><p>sebenarnya saya lebih suka mengejar layangan putus</p>
+                                        </div>
+                                </div>
+                                <div>
+                                        <div class='uk-card uk-card-body'>
+                                                <a class='uk-icon' uk-icon='icon: bolt; ratio: 2'/>
+                                                <h3>Renang</h3><p>kecepatan bisa diadu</p>
+                                            </div>
+                                    </div> 
+                                    <div>
+                                            <div class='uk-card uk-card-body'>
+                                                    <a class='uk-icon' uk-icon='icon: code; ratio: 2'/>
+                                                    <h3>Coding</h3><p>masih newbie</p>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <div class='uk-card uk-card-body'>
+                                                        <a class='uk-icon' uk-icon='icon: heart; ratio: 2'/>
+                                                        <h3>Bermain Game</h3><p>suka ngomong sendiri dan toxic</p>
+                                                    </div>
+                                            </div>
+                                            <div>
+                                                    <div class='uk-card uk-card-body'>
+                                                        <a class='uk-icon' uk-icon='icon: happy; ratio: 2'/>
+                                                        <h3>Menonton Film</h3><p>hiburan yang kadang membuat betah dikamar seharian</p>
+                                                    </div>
+                                                </div>                                                        
+                        </div> 
+  </div>
+<div class='uk-section-default'>
+    <div class='uk-section-xlarge uk-background-cover uk-background-blend-overlay uk-background-secondary uk-light' style='background-image: url(https://i.idol.st/u/card/art/2x/397SR-Tennoji-Rina-I-called-for-a-teacher-Nijiiro-Passions-15DVzF.png); background' uk-parallax='bgy: -50'>
+        <div class='uk-container'>
 
+            <h3 class='uk-heading-medium uk-text-center' uk-parallax='y: 50,0'>Senang Berjumpa Denganmu</h3>
+
+        </div>
+    </div>
+</div>
+</b:if>
 <main class='uk-margin-top'>
 <b:if cond='data:view.isHomepage'>
 <b:section id='FeaturedPost'>
@@ -1330,7 +1415,7 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
   },
 </b:includable>
     <b:includable id='postPagination'>
-  <div class='blog-pager container bg-blue uk-light uk-margin-top' id='blog-pager'>
+  <div class='blog-pager container bg-primary uk-light uk-margin-top' id='blog-pager'>
 <div class='uk-container uk-width-2-3@m uk-padding'>
 <ul class='uk-pagination uk-flex' uk-margin=''>
     <b:include cond='data:newerPageUrl' name='previousPageLink'/>
@@ -2148,7 +2233,7 @@ error: '<a class="js-load uk-flex uk-flex-center">Error!</a>'
           <li class='uk-nav-divider'/>
           <li><a href='/search/label/Surveying'>Surveying</a></li>
           <li class='uk-nav-divider'/>
-          <li><a href='/search/label/Data%20Science'>Data Science</a></li>                                      
+          <li><a href='https://www.gistellus.com/p/eko-rostianto.html'>Author</a></li>                                      
       </ul>
   </div>
 </div>
