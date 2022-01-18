@@ -107,9 +107,9 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
         <a class='uk-navbar-toggle uk-hidden@s' href='#offcanvas-slide' uk-navbar-toggle-icon='' uk-toggle=''/>
         <a class='uk-navbar-item uk-logo' expr:href='data:blog.homepageUrl'><data:blog.pageTitle/></a>
         <ul class='uk-navbar-nav uk-visible@s'>
-          <li><a href='/search/label/Bank'>Bank</a></li>
+          <li><a href='/search/label/Business'>Business</a></li>
           <li><a href='/search/label/Games'>Games</a></li>
-          <li><a href='/search/label/Tech'>Tech</a></li>
+          <li><a href='/search/label/Travel'>Travel</a></li>
           <li><a href='https://gistellus.blogspot.com/p/eko-rostianto.html'>Author</a></li>
           <li><a href='/404'>404</a></li>
         </ul>
@@ -162,9 +162,9 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
         <a class='uk-navbar-toggle uk-hidden@s' href='#offcanvas-slide' uk-navbar-toggle-icon='' uk-toggle=''/>
         <a class='uk-navbar-item uk-logo' expr:href='data:blog.homepageUrl'><data:blog.title/></a>
         <ul class='uk-navbar-nav uk-visible@s'>
-          <li><a href='/search/label/Bank'>Bank</a></li>
+          <li><a href='/search/label/Business'>Business</a></li>
           <li><a href='/search/label/Games'>Games</a></li>
-          <li><a href='/search/label/Tech'>Tech</a></li>
+          <li><a href='/search/label/Travel'>Travel</a></li>
           <li><a href='https://gistellus.blogspot.com/p/eko-rostianto.html'>Author</a></li>
           <li><a href='/404'>404</a></li>
         </ul>
@@ -2227,11 +2227,11 @@ error: '<a class="js-load uk-flex uk-flex-center">Error!</a>'
   <div class='uk-offcanvas-bar'>
       <button class='uk-offcanvas-close' type='button' uk-close=''/>
       <ul class='uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical'>
-          <li><a href='/search/label/Bank'>Bank</a></li>
+          <li><a href='/search/label/Business'>Business</a></li>
           <li class='uk-nav-divider'/>
           <li><a href='/search/label/Games'>Games</a></li>
           <li class='uk-nav-divider'/>
-          <li><a href='/search/label/Tech'>Tech</a></li>
+          <li><a href='/search/label/Travel'>Travel</a></li>
           <li class='uk-nav-divider'/>
           <li><a href='https://gistellus.blogspot.com/p/eko-rostianto.html'>Author</a></li>                                      
       </ul>
