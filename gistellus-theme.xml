@@ -11,17 +11,17 @@
 h3.post-title.uk-card-title {
     font-size: 18px;
 }
-.uk-offcanvas-bar .uk-label {background-color: #594379; color: #fff}
-a {color: #594379;}
+.uk-offcanvas-bar .uk-label {background-color: #A3DA8D; color: #fff}
+a {color: #A3DA8D;}
 .uk-light .uk-navbar-nav > li > a {color: #fff}
 .uk-modal-title {font-size: 24px;text-align: center;}
 .uk-modal-dialog {width: 720px;}
 html {font-size: 18px; font-weight: 500;}
-.bg-primary, .uk-card-badge, .uk-label {background: #594379;}
+.bg-blue, .uk-card-badge, .uk-label {background: #A3DA8D;}
 body {background-color: #f8f8f8;}
 .uk-card-badge {
     padding: 0;
-  background: none;
+	background: none;
 }
 .uk-label {
     margin: 0 5px;
@@ -31,20 +31,12 @@ body {background-color: #f8f8f8;}
 .uk-card-body{padding: 20px;}
 .feed-links {display: none;}
 
-.bg-header {background: linear-gradient(135deg, rgba(80,177,236,1) 0%, rgba(18,56,127,1) 35%, rgba(94,47,119,1) 70%, rgba(99,21,71,1) 100%);}
-
-.aa_txt{font-size:36px;font-weight:100;text-align:center;text-transform:uppercase;color:#594379;}
-.aa_title{background:#fff;padding:.5rem;}
-.aa_hh{color:#fff;background:#654791;padding:2rem;}
-.aa_desc{color:#fff;font-size:16px;text-transform:none;}
-
 .light {display:none}
 .dark-mode .dark {display:none}
 .dark-mode .light {display:block}
-
 /* Layout Blog Mode Dark */
 body.dark-mode {background:#111}
-.dark-mode footer a{color:#594379}
+.dark-mode footer a{color:#A3DA8D}
 
 .dark-mode .hero{background:#191919;color:#fff}
 .dark-mode .menu{background:#646464;color:#fff}
@@ -53,9 +45,7 @@ body.dark-mode {background:#111}
 .dark-mode footer, .dark-mode pre{background:#111}
 .dark-mode footer a:hover{color:#fefefe}
 .dark-mode .uk-card , .dark-mode .uk-background-default, .dark-mode .uk-modal-header, .dark-mode .uk-modal-body, .dark-mode .uk-modal-footer{background: #191919}
-iframe[sandbox]:not([sandbox=""]) {
-    display: none !important;
-}
+
 /*======================
     404 page
 =======================*/
@@ -77,9 +67,6 @@ h1.post-title.entry-title {margin-top: 20px!important;margin-bottom: 20px;}
 body.dark-mode {background:#191919}
 .dark-mode .uk-background-default {background:#111;color:#fff;}
 .disquss-comment {background: #191919}
-#blog-pager {
-    margin-top: 0px!important;
-}
 </style>
   <b:else/>
 <style>
@@ -91,9 +78,10 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
 .post-header { margin-top: 20px !important; margin-bottom: 20px;}
 .post-header-line-1 {display: flex;}
 .byline.post-timestamp {margin-left: auto !important;}
+div#blog-pager {margin-bottom: 20px!important;}
 .dark-mode .uk-modal-title {color:#fff}
 .dark-mode .blog-pager {background: #191919}
-.dark-mode #blog-pager a {color: #594379;}
+.dark-mode #blog-pager a {color: #A3DA8D;}
 .dark-mode footer{background:#111}
 </style>
  </b:if>
@@ -103,14 +91,12 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
 <b:if cond='data:view.isHomepage'>
 <header>
 <nav class='uk-navbar-container uk-navbar-transparent uk-container uk-margin uk-light uk-position-top uk-position-z-index' uk-navbar=''>
-    <div class='uk-navbar-left'>
+    <div class='uk-navbar-left'>     
         <a class='uk-navbar-toggle uk-hidden@s' href='#offcanvas-slide' uk-navbar-toggle-icon='' uk-toggle=''/>
-        <a class='uk-navbar-item uk-logo' expr:href='data:blog.homepageUrl'><data:blog.pageTitle/></a>
+      	<a class='uk-navbar-item uk-logo' expr:href='data:blog.homepageUrl'><img height='50' src='https://www.ekorostianto.com/img/avatars.png' width='50'/></a>        
         <ul class='uk-navbar-nav uk-visible@s'>
-          <li><a href='/search/label/Business'>Business</a></li>
-          <li><a href='/search/label/Games'>Games</a></li>
-          <li><a href='/search/label/Travel'>Travel</a></li>
-          <li><a href='https://gistellus.blogspot.com/p/eko-rostianto.html'>Author</a></li>
+          <li><a href='https://ekorostianto.github.io'>Portofolio</a></li>
+          <li><a href='/search/label/Report'>Report</a></li>
           <li><a href='/404'>404</a></li>
         </ul>
 
@@ -140,32 +126,26 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
       </div>
     </div>
 </nav>
-<div class='hero bg-primary bg-header uk-light uk-position-relative'>
+<div class='hero bg-blue uk-light uk-position-relative'>
   <div id='particles-js'/>
 <div class='uk-section-xlarge uk-container uk-position-z-index uk-width-1-2@s uk-text-center'>
-  <div class='uk-margin'>
-    <div class='aa_txt'>            
-      <span class='aa_title'>Site</span><span class='aa_hh'>of</span><br/><span class='aa_title'><data:blog.title/></span>
-    </div>                        
-  </div>  
-  <div id='typed-strings'>
-  <p><data:blog.metaDescription/></p>
-  </div>
-  <span id='typed'/>
+<div id='typed-strings'>
+    <p><b><data:blog.title/></b></p>
+</div>
+  <span class='uk-h2 uk-heading-bullet' id='typed'/>
+  <p>Sebuah blog untuk arsip belajar pribadi</p>
   </div>
 </div>
   </header>
   <b:else/>
-<div class='bg-primary uk-light' id='hero'>
+<div class='bg-blue uk-light'>
 <nav class='uk-navbar-container uk-navbar-transparent uk-container uk-margin' uk-navbar=''>
     <div class='uk-navbar-left'>
         <a class='uk-navbar-toggle uk-hidden@s' href='#offcanvas-slide' uk-navbar-toggle-icon='' uk-toggle=''/>
-        <a class='uk-navbar-item uk-logo' expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+        <a class='uk-navbar-item uk-logo' expr:href='data:blog.homepageUrl'><img height='50' src='https://www.ekorostianto.com/img/avatars.png' width='50'/></a>
         <ul class='uk-navbar-nav uk-visible@s'>
-          <li><a href='/search/label/Business'>Business</a></li>
-          <li><a href='/search/label/Games'>Games</a></li>
-          <li><a href='/search/label/Travel'>Travel</a></li>
-          <li><a href='https://gistellus.blogspot.com/p/eko-rostianto.html'>Author</a></li>
+          <li><a href='https://ekorostianto.github.io'>Portofolio</a></li>
+          <li><a href='/search/label/Report'>Report</a></li>
           <li><a href='/404'>404</a></li>
         </ul>
 
@@ -197,80 +177,7 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
 </nav>
 </div>
 </b:if>
-<b:if cond='data:blog.url == &quot;https://gistellus.blogspot.com/p/eko-rostianto.html&quot;'>
-<style>main, #hero, footer {
-    display: none;
-}</style>
-      <div class='uk-section uk-section-secondary uk-section-large'>
-          <div class='uk-container'>
-<h3 class='uk-heading-medium uk-text-center'>Profil</h3>
-                <div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse' uk-grid=''>
-                        <div class='uk-flex-last@s uk-card-media-right uk-cover-container uk-width-2-5@s'>
-                          <img alt='' src='https://i.idol.st/u/idol/97Tennoji-Rina-YB8JUo.png' uk-cover=''/>
-                            <canvas height='480' width='800'/>
-                        </div>
-                        <div class='uk-card-body uk-width-3-5@s'>
-                                <p class='uk-text-large uk-text-center'>Hai, nama saya <mark>Eko Rostianto</mark>, seorang no-life veteran, namun saya bangga dengan aktivitas untuk mengisi waktu luang saya. Terkadang juga bermain dengan font-end maupun back-end, ya walaupun masih awam</p>
-                                <div class='uk-flex uk-flex-center'>
-                                        <a class='uk-icon-button-default' href='https://www.instagram.com/r140e' uk-icon='icon: instagram; ratio: 2'/>
-                                        <a class='uk-icon-button-default uk-margin-left uk-margin-right' href='https://www.linkedin.com/in/ekorostianto' uk-icon='icon: linkedin; ratio: 2'/>
-                                        <a class='uk-icon-button-default' href='https://www.github.com/ekorostianto' uk-icon='icon: github; ratio: 2'/>
-                                </div>
-                        </div>
-                    </div>                             
-          </div>
-      </div>
-<div class='uk-section uk-section-primary uk-section-large'>
-<h3 class='uk-heading-medium uk-text-center'>Hobi</h3>
-                    <div class='uk-grid uk-grid-match uk-child-width-1-3@s uk-text-center' uk-grid=''>
-                            <div>
-                                <div class='uk-card uk-card-body'>
-                                        <a class='uk-icon' uk-icon='icon: star; ratio: 2'/>
-                                    <h3>Sepak Bola</h3><p>olahraga yang sangat membutuhkan energi ekstra</p>
-                                </div>
-                            </div>
-                            <div>
-                                    <div class='uk-card uk-card-body'>
-                                            <a class='uk-icon' uk-icon='icon: paint-bucket; ratio: 2'/>
-                                            <h3>Layangan</h3><p>sebenarnya saya lebih suka mengejar layangan putus</p>
-                                        </div>
-                                </div>
-                                <div>
-                                        <div class='uk-card uk-card-body'>
-                                                <a class='uk-icon' uk-icon='icon: bolt; ratio: 2'/>
-                                                <h3>Renang</h3><p>kecepatan bisa diadu</p>
-                                            </div>
-                                    </div> 
-                                    <div>
-                                            <div class='uk-card uk-card-body'>
-                                                    <a class='uk-icon' uk-icon='icon: code; ratio: 2'/>
-                                                    <h3>Coding</h3><p>masih newbie</p>
-                                                </div>
-                                        </div>
-                                        <div>
-                                                <div class='uk-card uk-card-body'>
-                                                        <a class='uk-icon' uk-icon='icon: heart; ratio: 2'/>
-                                                        <h3>Bermain Game</h3><p>suka ngomong sendiri dan toxic</p>
-                                                    </div>
-                                            </div>
-                                            <div>
-                                                    <div class='uk-card uk-card-body'>
-                                                        <a class='uk-icon' uk-icon='icon: happy; ratio: 2'/>
-                                                        <h3>Menonton Film</h3><p>hiburan yang kadang membuat betah dikamar seharian</p>
-                                                    </div>
-                                                </div>                                                        
-                        </div> 
-  </div>
-<div class='uk-section-default'>
-    <div class='uk-section-xlarge uk-background-cover uk-background-blend-overlay uk-background-secondary uk-light' style='background-image: url(https://i.idol.st/u/card/art/2x/397SR-Tennoji-Rina-I-called-for-a-teacher-Nijiiro-Passions-15DVzF.png); background' uk-parallax='bgy: -50'>
-        <div class='uk-container'>
 
-            <h3 class='uk-heading-medium uk-text-center' uk-parallax='y: 50,0'>Senang Berjumpa Denganmu</h3>
-
-        </div>
-    </div>
-</div>
-</b:if>
 <main class='uk-margin-top'>
 <b:if cond='data:view.isHomepage'>
 <b:section id='FeaturedPost'>
@@ -593,42 +500,41 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
 <b:section id='main'>
   <b:widget id='Blog1' locked='false' title='Postingan Blog' type='Blog' version='2' visible='true'>
     <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
       <b:widget-setting name='commentLabel'>Comments</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
       <b:widget-setting name='showShareButtons'>false</b:widget-setting>
       <b:widget-setting name='authorLabel'/>
-      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
       <b:widget-setting name='timestampLabel'/>
       <b:widget-setting name='reactionsLabel'/>
       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>false</b:widget-setting>
       <b:widget-setting name='showLocation'>false</b:widget-setting>
+      <b:widget-setting name='postLabelsLabel'/>
       <b:widget-setting name='showTimestamp'>true</b:widget-setting>
       <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-      <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='showCommentLink'>false</b:widget-setting>
-      <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='showAuthor'>true</b:widget-setting>
-      <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='showLabels'>false</b:widget-setting>
-      <b:widget-setting name='postLabelsLabel'/>
       <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
       <b:widget-setting name='showInlineAds'>false</b:widget-setting>
       <b:widget-setting name='showReactions'>false</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main' var='this'>
 <b:if cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}'>
 <div class='uk-container'>
-<div class='blog-posts hfeed container uk-child-width-1-3@m  uk-child-width-1-2@s uk-grid uk-flex-center' uk-grid='masonry: true' uk-height-viewport='expand: true'>
+<div class='blog-posts hfeed container uk-child-width-1-3@m  uk-child-width-1-2@s uk-grid uk-flex-center' uk-grid='masonry: true'>
     <b:loop index='i' values='data:posts' var='post'>
       <b:include data='post' name='postCommentsAndAd'/>
     </b:loop>
   </div>
-  </div>
   <b:include cond='data:view.isMultipleItems or data:view.isSingleItem' name='postPagination'/>
+  </div>
       <b:else/>
 <div class='blog-posts hfeed container'>
     <b:loop index='i' values='data:posts' var='post'>
@@ -1415,14 +1321,23 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
   },
 </b:includable>
     <b:includable id='postPagination'>
-  <div class='blog-pager container bg-primary uk-light uk-margin-top uk-padding' id='blog-pager'>
-<div class='uk-container uk-width-2-3@m uk-padding'>
-<ul class='uk-pagination uk-flex' uk-margin=''>
-    <b:include cond='data:newerPageUrl' name='previousPageLink'/>
-    <b:include cond='data:olderPageUrl' name='nextPageLink'/>
-</ul>
+  <b:if cond='data:view.isSingleItem'>
+<div class='blog-pager container bg-blue uk-light' id='blog-pager'>
+    <div class='uk-container uk-width-2-3@m uk-padding'>
+      <ul class='uk-pagination uk-flex' uk-margin=''>
+          <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+          <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+      </ul>
     </div>
 </div>
+  <b:else/>
+  <div class='blog-pager container uk-margin uk-background-default uk-card-body uk-card-default' id='blog-pager'>
+    <ul class='uk-pagination uk-flex' uk-margin=''>
+        <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+        <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+    </ul>
+  </div>
+  </b:if>
 </b:includable>
     <b:includable id='postQuickEdit' var='post'>
   <b:if cond='data:post.editUrl'>
@@ -1832,13 +1747,13 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
           <b:widget id='PopularPosts1' locked='false' title='Trending Post' type='PopularPosts' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='numItemsToShow'>7</b:widget-setting>
-              <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+              <b:widget-setting name='showThumbnails'>false</b:widget-setting>
               <b:widget-setting name='showSnippets'>false</b:widget-setting>
               <b:widget-setting name='timeRange'>LAST_MONTH</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
               <b:include name='widget-title'/>
-              <div class='widget-content'>
+              <div class='widget-content uk-card bg-blue'>
                 <b:include name='snippetedPosts'/>                
               </div>
             </b:includable>
@@ -2066,12 +1981,13 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
               </b:with>
             </b:includable>
             <b:includable id='snippetedPostContent'>
-              <div class='post-content uk-card uk-card-primary'>
+              <div class='post-content uk-card-body'>
                 <b:include cond='data:this.postDisplay.showTitle' name='snippetedPostTitle'/>
                 <b:include cond='data:this.postDisplay.showDate or data:this.postDisplay.showAuthor' name='snippetedPostByline'/>
                 <b:include cond='data:this.postDisplay.showSnippet' data='post' name='postSnippet'/>
                 <b:include cond='data:this.postDisplay.showFeaturedImage and data:post.featuredImage' name='snippetedPostThumbnail'/>
               </div>
+              <hr class='uk-divider-icon'/>
             </b:includable>
             <b:includable id='snippetedPostThumbnail'>
               <div class='item-thumbnail uk-card-media-bottom'>
@@ -2082,9 +1998,7 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
             </b:includable>
             <b:includable id='snippetedPostTitle'>
               <b:if cond='data:post.title != &quot;&quot;'>
-                <div class='uk-card-body'>
                 <h3 class='post-title uk-card-title'><a expr:href='data:post.url'><data:post.title/></a></h3>
-                </div>
               </b:if>
             </b:includable>
             <b:includable id='snippetedPosts'>
@@ -2148,19 +2062,16 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
         </b:section>
     </div>
 </div>
-
 </main>
-<footer class='uk-section-small uk-background-secondary uk-light'>
-  <div class='uk-flex uk-flex-center uk-margin'>
-<button class='uk-button uk-button-default' type='button' uk-toggle='target: #offcanvas-overlay'>Sidebar</button>
-  </div>
-  <div class='uk-container uk-container-small'>
-    <div class='uk-flex uk-flex-center uk-margin uk-grid-small'>
-      <a class='uk-icon-button-default' uk-icon='icon: facebook'/>
-      <a class='uk-icon-button-default' uk-icon='icon: instagram'/>
-      <a class='uk-icon-button-default' uk-icon='icon: twitter'/>
-      <a class='uk-icon-button-default' uk-icon='icon: youtube'/>
+<div class='bg-blue uk-light'>
+  <div class='uk-container uk-width-2-3@m uk-padding'>
+    <div class='uk-flex uk-flex-center'>
+      <button class='uk-button uk-button-default' type='button' uk-toggle='target: #offcanvas-overlay'>More</button>
     </div>
+  </div>
+</div>
+<footer class='uk-section-small uk-background-secondary uk-light'>
+  <div class='uk-container uk-container-small'>
     <div class='uk-text-center'>
       <span>Copyright &#169; 2021 <a expr:href='data:blog.homepageUrl' itemprop='name' itemscope='itemscope' itemtype='https://data-vocabulary.org/copyrightHolder'><data:blog.title/></a> All Right Reserved</span>
     </div>
@@ -2168,7 +2079,7 @@ h1.post-title.entry-title a, span.byline.post-timestamp a, span.byline.post-comm
 </footer>
 <b:if cond='data:view.isSingleItem'>
 <script type='text/javascript'>
-var disqus_shortname = &#39;gis-tellus&#39;;
+var disqus_shortname = &#39;eko-rostianto&#39;;
 var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
 if (!disqus_blogger_current_url.length) {
 disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
@@ -2221,43 +2132,39 @@ error: '<a class="js-load uk-flex uk-flex-center">Error!</a>'
 //]]>//</script>
 </b:if>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<script src='https://rawcdn.githack.com/ekorostianto/r140e-blogger/878b0863feefd8954d2d4f8cfbaac98aaf5d3310/r140e_homePage.js'/>
+<script src='https://rawcdn.githack.com/ekorostianto/r140e-blogger/7ed62f84a2eaf012f18cc9f40bc83225e2988500/r140e_homePage.js'/>
 </b:if>
 <div id='offcanvas-slide' uk-offcanvas='mode: reveal; overlay: true'>
   <div class='uk-offcanvas-bar'>
       <button class='uk-offcanvas-close' type='button' uk-close=''/>
       <ul class='uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical'>
-          <li><a href='/search/label/Business'>Business</a></li>
+          <li><a href='https://ekorostianto.github.io'>Portofolio</a></li>
           <li class='uk-nav-divider'/>
-          <li><a href='/search/label/Games'>Games</a></li>
-          <li class='uk-nav-divider'/>
-          <li><a href='/search/label/Travel'>Travel</a></li>
-          <li class='uk-nav-divider'/>
-          <li><a href='https://gistellus.blogspot.com/p/eko-rostianto.html'>Author</a></li>                                      
+          <li><a href='/search/label/Report'>Report</a></li>                                    
       </ul>
   </div>
 </div>
   </b:if>
     <b:if cond='data:view.isError'>
 <section class='page_404'>
-  <div class='container'>
-    <div class='row'> 
-    <div class='col-sm-12 '>
-    <div class='col-sm-10 col-sm-offset-1  text-center'>
-    <div class='four_zero_four_bg'>
-      <h1 class='text-center '>404</h1>       
-    </div>    
-    <div class='contant_box_404'>
-    <h3 class='h2'>
-    Look like you&#39;re lost
-    </h3>   
-    <p>the page you are looking for not avaible!</p>    
-    <a class='link_404' expr:href='data:blog.homepageUrl'>Go to Home</a>
-  </div>
-    </div>
-    </div>
-    </div>
-  </div>
+	<div class='container'>
+		<div class='row'>	
+		<div class='col-sm-12 '>
+		<div class='col-sm-10 col-sm-offset-1  text-center'>
+		<div class='four_zero_four_bg'>
+			<h1 class='text-center '>404</h1>				
+		</div>		
+		<div class='contant_box_404'>
+		<h3 class='h2'>
+		Look like you&#39;re lost
+		</h3>		
+		<p>the page you are looking for not avaible!</p>		
+		<a class='link_404' expr:href='data:blog.homepageUrl'>Go to Home</a>
+	</div>
+		</div>
+		</div>
+		</div>
+	</div>
 </section>
 </b:if>
 <script src='https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js'/>
